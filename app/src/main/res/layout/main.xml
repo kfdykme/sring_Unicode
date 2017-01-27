@@ -1,11 +1,46 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:orientation="vertical">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+	<EditText
+		android:id="@+id/mainEditText"
+		android:layout_height="213dp"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:background="#F9C7C3"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="horizontal">
+
+		<EditText
+			android:id="@+id/numberEdit"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:hint="mishi"
+			android:ems="10"/>
+
+		<Button
+			android:id="@+id/mainButton"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="Change"/>
+
+	</LinearLayout>
+
+	<EditText
+		android:id="@+id/mainTextView"
+		android:layout_height="match_parent"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="match_parent"
+		
+		android:background="#C5B2B0"
+		android:textSize="40sp"/>
 
 </LinearLayout>
+
