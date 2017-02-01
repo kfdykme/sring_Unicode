@@ -12,7 +12,7 @@ public class MainActivity extends Activity
 	EditText et;
 	TextView t;
 	Button b;
-	int cha;
+	static int cha;
 	EditText et2;
 	EditText et3;
     @Override
@@ -29,11 +29,12 @@ public class MainActivity extends Activity
 
 				@Override
 				public void onClick(View p1)
-				{		String s = et.getText().toString();
-					cha = et2.getText().toString.
+				{	
+					String s = et.getText().toString();
+					cha =  Integer.valueOf( et2.getText().toString());
 					s = string2Unicode(s);
 					s = unicode2String(s);
-					t.setText(s);
+					et3.setText(s);
 					
 				}
 				
